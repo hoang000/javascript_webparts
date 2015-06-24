@@ -2,4 +2,5 @@
 # 3D-Rotation is a carousel and is tested to run on IE, Firefox, and Chrome.
 # Flip-Div is a digital clock that is synched with the time server and displays the real time on the web browswer.
 # Slide Show is a static site, using Jquery.
-# Timepicker is written in object oriented style.
+# TimePicker is written in object oriented style. If one ever uses the timepicker feature in iPhone or the simmilar, she or he would have the idea how the it works.
+# 3D-Transformation is a rotating cube and demonstrates the DOM transformation.
