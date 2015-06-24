@@ -1,0 +1,53 @@
+.button_panel-L	{
+	height: 82px;
+	padding:25px 25px;
+	float: left;
+        background-image: url(../image/curtain-L.png);
+        background-position: center left;
+        background-repeat: no-repeat;
+        position: relative;
+        left: 0px;
+        top: -264px;
+       
+      
+       
+}
+
+.button_panel-R	{
+	height: 82px;
+	padding: 25px 25px;
+	float: left;
+        background-image: url(../image/curtain-R.png);
+        background-position: center left;
+        background-repeat: no-repeat;
+        position: relative;
+        left: 297px;
+        top: -264px
+}        
+
+.display_panel {
+	
+	width: 400px;
+        height: 132px;
+	overflow: hidden;
+        float: left;
+	
+}
+.image_list {
+    position: relative;
+    left:0px;
+    margin: 0;
+    padding:0;
+    width: 3600px; //set dynamically 
+   
+}
+
+
+.image_list li img	{
+     width: 98px;
+    border-radius: 5px;
+    position: relative;
+    left: -20px;
+    top: -5px    
+}
+
