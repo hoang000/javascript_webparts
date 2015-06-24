@@ -1,0 +1,127 @@
+
+#wrapper
+{
+    position: relative; 
+    top: 50px;
+    box-shadow: 0px 0px 10px 3px rgb(1,1,1);
+    width: 100px;
+    height: 145px;
+   
+    border-radius: 10px;
+    
+}
+#container 
+{
+    position: absolute;  
+    top: 15px;
+    left: 19px;
+    width: 62px; 
+    height: 102px;
+   box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 1.0);
+    background-size: 61px 110px;
+    overflow:hidden; 
+    background: -moz-linear-gradient(90deg, #fffeef,#000000,#000000,#000000,#000000,#fffeef);
+    background: -ms-linear-gradient(90deg,#fffeef,#e7e7e7,#000000,#000000,#000000,#000000,#e7e7e7,#fffeef);
+    background: linear-gradient(0deg,#fffeef, #e7e7e7,#000000,#000000, #000000, #000000,#e7e7e7,#fffeef);
+    background: -webkit-linear-gradient(90deg,#fffeef,#e7e7e7,#000000,#000000,#e7e7e7,#fffeef);   
+   
+}
+
+#minute, #hour
+
+{ position: relative;
+  margin: -6px 2px  52px  2px ;
+  
+  width: 27px; 
+  height: 110px;
+  
+  -ms-transform-style: preserve-3d;
+   -moz-transform-style: preserve-3d;
+   -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+   -perspective: 200px;
+   -ms-perspective: 200px;
+   -moz-perspective: 200px;
+   -o-perspective: 200px;
+    overflow: hidden;
+    background-size: 27px 115px;
+    background-position: center;
+    background-repeat: no-repeat; 
+   
+   background:-moz-linear-gradient(90deg, #000000 0%, #e7e7e7 44%, #ffffff 50%, #e7e7e7 56%, #000000 100%);
+   background: -ms-linear-gradient(0deg, #000000 0%, #e7e7e7 44%, #ffffff 50%, #e7e7e7 56%, #000000 100%);
+   background:  -webkit-linear-gradient(0deg, #000000 0%, #e7e7e7 44%, #ffffff 50%, #e7e7e7 56%, #000000 100%);
+   background: linear-gradient(0deg, #000000 0%, #e7e7e7 44%, #ffffff 50%, #e7e7e7 56%, #000000 100%);
+ 
+   float: left;
+    
+}
+
+#display
+{  clear: left;
+   position: absolute;
+   top: 122px;
+   left: 6px;
+   text-align: center;
+   font-size: 20px;
+   font-weight: bold;
+   color: #000099;
+}
+
+
+#minute:hover, #hour:hover{ cursor: default;}
+
+
+#minute div, #hour div 
+{
+    position: relative;
+
+    width: 27px;
+    height: 20px;
+    font-weight: normal;
+    color: #ffffff;
+     text-align: center;  
+     font-family: Times New Roman, sans-serif;
+     font-stretch: ultra-condensed;
+      font-size: 17px;   
+}
+
+
+#minute div:nth-child(3), #hour div:nth-child(3)
+{
+    
+    color: #000000;
+     font-weight: bolder;
+     border-top: inset 1px #ffffff;
+     border-bottom: outset 1px #ffffff;
+     margin-top: 4px;
+     font-stretch: ultra-expanded;
+} 
+
+
+                                                                            
+#minute .one, #hour .one
+{   transform-origin: 0% 100%;
+    transform: rotateX(50deg);   
+   margin-top: 2px;       //in accordance with translation in distance
+}
+
+#minute .two, #hour .two
+{   transform-origin: 0% 100%;
+    transform: rotateX(50deg);  
+     
+}
+
+#minute .four, #hour .four
+{  transform-origin: 100% 0%;
+   transform: rotateX(-50deg); 
+   margin-top: 6px;             // accordingly
+} 
+
+
+#minute .five, #hour .five
+{  transform-origin: 100% 0%;
+   transform: rotateX(-50deg); 
+   margin-top: 0px;                 // accordingly
+}
+
