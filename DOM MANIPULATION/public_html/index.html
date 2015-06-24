@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>COSINES-SINES-ANIMATION</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="layout.css">
+        <script type="text/javascript">
+ 
+/*********************************************************************************************
+ The below excercise is elaborated to present 4 DOM elements revolving in elliptical path and 
+ the fifth DOM element, nicknamed moon or satelite, revolves around one of those 4 DOM elements, the Earth
+ **********************************************************************************************/   
+window.onload = function() 
+    
+  {
+  
+  var vRadius = 80;    //vertical radius of the eclipse
+  var hRadius = 400;  //horizontal radius of the eclipse
+  var  mRadius = 60;  // moon orbit radius
+ 
+  var nodes = document.getElementById("demo").childNodes;
+  
+
+ var angle = 0, lastTime = null;
+
+                                                                                                                      
+ function animate(time) {                                                                               
+
+var offSet = 0;
+
+if (lastTime != null)
+{ angle =  (angle += (time - lastTime) * 0.0003) % 6.28 ;                                             
+     
+ }
+lastTime = time;                                                                            
+                                                                                                  
+Array.prototype.forEach.call(nodes, function(node)
+{
+  // condition to filter out the non-element node- e.g., textNode
+  if (node.nodeType ==1)
+ {  
+ 
+     if (node.nodeName =="IMG")
+       {      //revolve all IMG nodes (image nodes)
+            
+            node.style.top = (Math.sin(angle + offSet)) *vRadius  + "px";
+            node.style.left = (Math.cos(angle + offSet)) *hRadius  + "px";
+                      
+           offSet += 1.57  ;
+     
+         } 
+            
+            
+   else
+    { 
+         // paint the trailing path as the 'moon' is revolving around its main central  
+           
+                  
+                    var dot = document.createElement("div");
+                          dot.className = "dot";
+                          
+            
+             dot.style.top = (Math.sin(angle)) *mRadius  + 10 + "px";
+             dot.style.left = (Math.cos(angle)) *(mRadius + 40)  + 10 + "px";
+               node.childNodes[1].insertBefore(dot, node.childNodes[1].firstChild);
+                
+                
+                
+                
+        // revole the div node containing the "moon" or satelite node                                                                        
+          node.style.top = ((Math.sin(angle )) *vRadius)  + "px";
+          node.style.left = (Math.cos(angle)) *hRadius  + "px";  
+   
+      // animate the "moon or satelite" node to revolve around its containing node
+          node.childNodes[1].lastChild.style.top = (Math.sin(angle)) *mRadius + "px";
+          node.childNodes[1].lastChild.style.left = (Math.cos(angle)) *(mRadius + 40) + "px";
+          
+      
+              
+            
+            // when it arrives in full circle, remove the trailing circular path of the "moon" element
+             if (angle > 6.0) 
+             {   
+                   Array.prototype.forEach.call(node.childNodes[1].childNodes, function(n)
+                            {
+                                     if (n.nodeName != "IMG")
+                                         node.childNodes[1].removeChild(n); 
+                             });   
+                }
+            
+            }   
+ }
+});
+
+requestAnimationFrame(animate);
+}
+
+
+requestAnimationFrame(animate);
+  
+    }
+
+</script>
+    
+  
+    </head>
+    <body>
+        <div  id="demo">   
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">  
+            <div id="container">
+                <div id="center"><img src="" alt=""></div>
+            </div>
+        
+        
+        </div>
+    
+        
+        </body>
+</html>
