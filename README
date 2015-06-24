@@ -1,4 +1,4 @@
-# These 5 webpart apps are my web design/developement work. 
+# These 6 webpart apps are my web design/developement work. 
 
 # Please use download Zip or Clone in Desktop. 
 # Launch the html file in each app to check it out for a look.
@@ -14,3 +14,5 @@
 # TimePicker is written in object oriented style and works similar to the timepicker feature in the iPhone.
 
 # 3D-Transformation is a rotating cube and demonstrates the DOM transformation. It is tested to run on IE as well.
+
+# DOM-Animation mimics the solar system. Planet bodies revolve in ellitical path and one has a satelite planet.
