@@ -1,6 +1,8 @@
-# Please use download Zip or Clone in Desktop. Launch the html file in each app with the web brower of your choice.
+# These 5 webpart apps are my web design/developement work. 
+
+# Please use download Zip or Clone in Desktop. Launch the html file in each app with the brower of your choice.
 # 3D-Rotation is a carousel and is tested to run on IE, Firefox, and Chrome.
 # Flip-Div is a digital clock that is synched with the time server and displays the real time on the web browswer.
 # Slide Show is a static site, using Jquery.
 # TimePicker is written in object oriented style and works similar to the timepicker feature in the iPhone.
-# 3D-Transformation is a rotating cube and demonstrates the DOM transformation.
+# 3D-Transformation is a rotating cube and demonstrates the DOM transformation. It is tested to run on IE as well.
