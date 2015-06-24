@@ -15,4 +15,4 @@
 
 # 3D-Transformation is a rotating cube and demonstrates the DOM transformation. It is tested to run on IE as well.
 
-# DOM-Animation mimics the solar system. Planet bodies revolve in ellitical path and one has a satelite planet.
+# DOM-Manipulation mimics the solar system. Planet bodies revolve in ellitical path and one has a satelite planet.
